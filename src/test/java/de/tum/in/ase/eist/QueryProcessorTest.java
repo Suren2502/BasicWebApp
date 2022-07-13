@@ -36,5 +36,11 @@ class QueryProcessorTest {
 			fail("Your QueryProcessor does not know about name.");
 		}
 	}
-
+	@Test
+	void isNotCaseSensitive3() {
+		String actual = queryProcessor.process("plus");
+		if (!actual.contains("406")) {
+			fail("Wrong");
+		}
+	}
 }

@@ -13,8 +13,9 @@ public class QueryProcessor {
                     "writer in the English language and the world's pre-eminent dramatist.";
         } else if (query.contains("name")) {
             return "Suren";
+        } else if (query.contains("plus")) {
+            return "406";
         }
         return "";
-
     }
 }
