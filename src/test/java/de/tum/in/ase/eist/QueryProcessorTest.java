@@ -29,12 +29,12 @@ class QueryProcessorTest {
 		}
 	}
 
-//	@Test
-//	void isNotCaseSensitive2() {
-//		String actual = queryProcessor.process("name");
-//		if (!actual.contains("Suren")) {
-//			fail("Your QueryProcessor does not know about name.");
-//		}
-//	}
+	@Test
+	void isNotCaseSensitive2() {
+		String actual = queryProcessor.process("name");
+		if (!actual.contains("Suren")) {
+			fail("Your QueryProcessor does not know about name.");
+		}
+	}
 
 }
